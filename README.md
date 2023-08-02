@@ -30,6 +30,7 @@ document.getElementById('wordCloudContainer').appendChild(wordCloudDiv);
 ```
 
 **Result:**
+
 ![image](https://github.com/keckelt/wordfest/assets/10337788/e93ae622-f80f-4dee-bb13-3b8ac4c0bc1e)
 
 ### Advanced Usage
