@@ -28,8 +28,9 @@ const data = [
 const wordCloudDiv = wordfest(data);
 document.getElementById('wordCloudContainer').appendChild(wordCloudDiv);
 ```
+
 **Result:**
-<div style="display: flex; flex-flow: row wrap; align-items: baseline; justify-content: center;"><span class="group" style="font-size: 3em;"><span class="text">apple</span>&nbsp;<span class="freq" style="margin-right: 1em; font-size: 0.5em;">10</span></span><span class="group" style="font-size: 2.5em;"><span class="text">banana</span>&nbsp;<span class="freq" style="margin-right: 1em; font-size: 0.5em;">8</span></span><span class="group" style="font-size: 2em;"><span class="text">orange</span>&nbsp;<span class="freq" style="margin-right: 1em; font-size: 0.5em;">6</span></span><span class="group" style="font-size: 1.25em;"><span class="text">cherry</span>&nbsp;<span class="freq" style="margin-right: 1em; font-size: 0.5em;">3</span></span><span class="group" style="font-size: 1em;"><span class="text">blueberry</span>&nbsp;<span class="freq" style="margin-right: 1em; font-size: 0.5em;">2</span></span></div>
+![image](https://github.com/keckelt/wordfest/assets/10337788/e93ae622-f80f-4dee-bb13-3b8ac4c0bc1e)
 
 ### Advanced Usage
 WordFest provides flexibility through configuration options:
@@ -54,8 +55,10 @@ const fruitConfig = {
 const wordCloudDiv = wordfest(data, fruitConfig);
 document.getElementById('wordCloudContainer').appendChild(customWordCloudDiv);
 ```
+
 **Result:**
-<div style="display: flex; flex-flow: row wrap; align-items: baseline; justify-content: center;"><span class="group" style="font-size: 3em; color: green;"><span class="text">apple</span>&nbsp;<span class="freq" style="margin-right: 1em; font-size: 0.5em;">10</span></span><span class="group" style="font-size: 2.5em; color: gold;"><span class="text">banana</span>&nbsp;<span class="freq" style="margin-right: 1em; font-size: 0.5em;">8</span></span><span class="group" style="font-size: 2em; color: orange;"><span class="text">orange</span>&nbsp;<span class="freq" style="margin-right: 1em; font-size: 0.5em;">6</span></span><span class="group" style="font-size: 1.25em; color: red;"><span class="text">cherry</span>&nbsp;<span class="freq" style="margin-right: 1em; font-size: 0.5em;">3</span></span><span class="group" style="font-size: 1em; color: darkslateblue;"><span class="text">blueberry</span>&nbsp;<span class="freq" style="margin-right: 1em; font-size: 0.5em;">2</span></span></div>
+
+![image](https://github.com/keckelt/wordfest/assets/10337788/c29c385d-8633-4ad8-a04e-c1b32cea7dbd)
 
 
 ### Styling
@@ -82,10 +85,10 @@ container.style.backgroundClip = "text";
 container.style.width = "25em";
 ```
 
-
-
 **Result:**
-<div id="wordCloudContainer" style="background: linear-gradient(0deg, rgb(0, 219, 222) 0%, rgb(252, 0, 255) 100%) padding-box text; -webkit-text-fill-color: transparent; width: 25em;background-clip: text;"><div style="display: flex; flex-flow: row wrap; column-gap: 1em; align-items: baseline; justify-content: center;"><span class="group" style="font-size: 3em;"><span class="text">apple</span>&nbsp;<span class="freq" style="font-size: 0.5em;">10</span></span><span class="group" style="font-size: 2.5em;"><span class="text">banana</span>&nbsp;<span class="freq" style="font-size: 0.5em;">8</span></span><span class="group" style="font-size: 2em;"><span class="text">orange</span>&nbsp;<span class="freq" style="font-size: 0.5em;">6</span></span><span class="group" style="font-size: 1.25em;"><span class="text">cherry</span>&nbsp;<span class="freq" style="font-size: 0.5em;">3</span></span><span class="group" style="font-size: 1em;"><span class="text">blueberry</span>&nbsp;<span class="freq" style="font-size: 0.5em;">2</span></span></div></div>
+
+![image](https://github.com/keckelt/wordfest/assets/10337788/6c194b3b-6d9e-428e-b5f4-05499b2a5617)
+
 
 ## API Reference
 `wordfest(data: DataItem[], config?: WordFestConfig): HTMLDivElement``
