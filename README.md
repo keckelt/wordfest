@@ -54,7 +54,7 @@ const fruitConfig = {
 };
 
 const wordCloudDiv = wordfest(data, fruitConfig);
-document.getElementById('wordCloudContainer').appendChild(customWordCloudDiv);
+document.getElementById('wordCloudContainer').appendChild(wordCloudDiv);
 ```
 
 **Result:**
