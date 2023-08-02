@@ -1,0 +1,45 @@
+{
+  "name": "wordfest",
+  "version": "1.0.0",
+  "description": "HTML word clouds with frequency.",
+  "type": "module",
+  "main": "dist/wordfest.umd.cjs",
+  "module": "dist/wordfest.js",
+  "exports": {
+    ".": {
+      "import": "./dist/wordfest.js",
+      "require": "./dist/wordfest.umd.cjs"
+    }
+  },
+  "types": "dist/wordfest.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "start": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:keckelt/wordfest.git"
+  },
+  "keywords": [
+    "wordcloud",
+    "visualization",
+    "html"
+  ],
+  "author": "Klaus Eckelt",
+  "license": "MIT",
+  "dependencies": {
+    "d3-array": "^3.2.4",
+    "d3-scale": "^4.0.2",
+    "d3-selection": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/d3-array": "^3.0.5",
+    "@types/d3-scale": "^4.0.3",
+    "@types/d3-selection": "^3.0.5",
+    "prettier": "^3.0.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.8",
+    "vite-plugin-dts": "^3.4.0"
+  }
+}

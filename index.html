@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WordFest</title>
+  </head>
+  <body>
+    <h1>Wordfest</h1>
+    <h2>Examples</h2>
+    <h3>Price Increases</h3>
+    <div id="price-increases"></div>
+
+    <script type="module">
+      import { wordfest } from "./src/wordfest.ts";
+
+      const data = [
+        { text: "gas", value: 904, color: "#F05268" },
+        { text: "milk", value: 455 },
+        { text: "meat", value: 402 },
+
+        { text: "beef", value: 298 },
+        { text: "chicken", value: 265 },
+        { text: "eggs", value: 205 },
+
+        { text: "cars", value: 150, color: "#F05268" },
+        { text: "hamburger", value: 138 },
+        { text: "ground beef", value: 134 },
+
+        { text: "bread", value: 131 },
+        { text: "haircut", value: 127 },
+        { text: "grocieries", value: 123 },
+      ];
+
+      const container = document.getElementById("price-increases");
+      const vis = wordfest(data);
+      container.appendChild(vis);
+    </script>
+  </body>
+</html>
