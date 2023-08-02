@@ -92,7 +92,7 @@ container.style.width = "25em";
 
 
 ## API Reference
-`wordfest(data: DataItem[], config?: WordFestConfig): HTMLDivElement``
+`wordfest(data: DataItem[], config?: WordFestConfig): HTMLDivElement`
 
 Generates a word cloud visualization from the provided input data.
 
@@ -100,4 +100,4 @@ Generates a word cloud visualization from the provided input data.
 * `config` (optional): An object that customizes word cloud behavior. Available options:
     * `textProperty`: Specifies the name of the property in data objects to use as word text (default: 'text').
     * `valueProperty`: Specifies the name of the property to use for scaling word sizes (default: 'value').
-    * `colorProperty`: Specifies the name of the property for individual text colors (default: 'color').
+    * `colorProperty`: Specifies the name of the property for individual text colors (default: 'color'). If no color is specified, the the default text color is used.
