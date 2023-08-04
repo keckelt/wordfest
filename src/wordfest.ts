@@ -56,9 +56,6 @@ export function wordfest(data: DataItem[], config: WordFestConfig = {}): HTMLDiv
     textProperty = "text", // Default property name for word text
     valueProperty = "value", // Default property name for word value
     colorProperty = "color", // Default property name for text color
-    //TODO textColor, valueColor
-    // TODO sortProperty
-    // TODO sortOrder
   } = config;
 
   // Sort the data by value in descending order
@@ -89,7 +86,6 @@ export function wordfest(data: DataItem[], config: WordFestConfig = {}): HTMLDiv
     .style("column-gap", "1em")
     .style("align-items", "baseline")
     .style("justify-content", "center");
-  //.style("font-family", "sans");
 
   const groups = div
     .selectAll("span.group")
@@ -98,13 +94,11 @@ export function wordfest(data: DataItem[], config: WordFestConfig = {}): HTMLDiv
       const g = enter
         .append("span")
         .classed("group", true)
-        // .style("white-space", "nowrap")
         .style("font-size", (d) => `${x(d[valueProperty] as number)}em`)
         .style("color", (d) => d[colorProperty]);
 
       g.append("span")
         .classed("text", true)
-        // .style("white-space", "normal")
         .each(function () {
           this.insertAdjacentHTML("afterend", "&nbsp;");
         });
